@@ -11,5 +11,5 @@ jobs:
       - uses: actions/setup-ruby@v1
         with:
           ruby-version: '3.0'
-      - uses: actions/
+      - name: Run Code
       - run: ruby first.rb
