@@ -4,12 +4,10 @@ on: [push]
 jobs:
   run-ruby-file:
     runs-on: ubuntu-latest
+    name: Step 1
     steps:
-      - name: Step 1
       - uses: actions/checkout@v3
-      - name: Step 2
       - uses: actions/setup-ruby@v1
         with:
           ruby-version: '3.0'
-      - name: Run Code
       - run: ruby first.rb
